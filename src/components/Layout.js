@@ -52,6 +52,59 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const StoryContainer =styled.div`
+  width: 33%;
+  border: 1px solid black;
+  margin-left:22%;
+  margin-top:40px;
+  height:110px;
+  background-color:yellow;
+  border-radius:10px;
+  overflow:hidden;
+`;
+
+const Story =styled.div`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: center;
+  margin:20px 20px 0px 20px;
+  
+`;
+
+const Story_name =styled.div`
+display: inline-flex;
+justify-content: center;
+  align-items: center;
+  //background-color: red;
+  line-height:center;
+  margin:5px 20px 0px 20px;
+  width:60px;
+  height:10px;
+  //overflow: hidden;
+  font-size:5px;
+  white-space: nowrap;
+
+`;
+
+const Next_button=styled.div`
+position:absolute;
+top:140px;
+right:700px;
+background-color:white;
+width:30px;
+height:30px;
+border-radius: 50%;
+text-align:center;
+line-height:25px;
+font-size:25px;
+border:1px solid black;
+
+`;
 function Layout({ children }) {
   return (
     <>
@@ -100,6 +153,37 @@ function Layout({ children }) {
           </ButtonContainer>
         </NavContainer>
       </Wrapper>
+      <StoryContainer>
+        <Next_button>
+          >
+        </Next_button>
+        <Story>
+        </Story>
+        <Story>
+        </Story>
+        <Story>
+        </Story>
+        <Story>
+        </Story>
+        <Story>
+        </Story>
+        <Story_name>
+        안녕하세요
+        </Story_name>
+        <Story_name>
+        스토리
+        </Story_name>
+        <Story_name>
+        이름설정입니다
+        </Story_name>
+        <Story_name>
+        asdf123
+        </Story_name>
+        <Story_name>
+        ㅁㅁㅁㅁ
+        </Story_name>
+        
+      </StoryContainer>
       {children}
     </>
   );
