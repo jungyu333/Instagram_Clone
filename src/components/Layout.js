@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  position: fixed;
+  z-index: 50;
   background-color: #ffffff;
   height: 60px;
   width: 100%;
