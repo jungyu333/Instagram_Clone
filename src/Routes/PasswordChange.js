@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer.js"
+
 
 
 const Wrapper = styled.div`
@@ -64,7 +64,7 @@ function PasswordChange() {
 
             </UserChange>
           </ProfileChangeContainer>
-          <Footer/>
+          
         </Wrapper>
       </Layout>
     </div>
