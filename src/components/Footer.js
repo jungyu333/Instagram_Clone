@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const FooterStyle = styled.div`
  text-align: center;
-
  background-color:  #ffffff;
 `;
 
@@ -16,3 +15,4 @@ function Footer() {
   };
 
 export default Footer;
+

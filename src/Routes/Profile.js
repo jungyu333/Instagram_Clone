@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer"
+//import Footer from "../src/components/Footer.js"
+import PopUp from "../components/PopUp";
 
 
 
@@ -24,7 +25,6 @@ const Container = styled.div`
   /* height: 100%; */
   max-width: 900px;
   min-width: 900px;
-
 `;
 const ProfileBox = styled.div`
   display: block;
@@ -97,8 +97,32 @@ const FollowContainer = styled.div`
   
 `;
 
+// pop up
+const PopUpStatus = {
+    TRUE : true,
+    FALSE : false
+}
+
 
 function Profile() {
+
+// pop up
+    const [editPopUp, setEditPopUp] = useState(false);
+
+// pop up
+    const handleEditPopUp = (isEnable) => {
+        if(isEnable === true) {
+            setEditPopUp(true);
+            document.body.style.overflow = "hidden";
+        }
+        else {
+            setEditPopUp(false);
+            document.body.style.overflow = "unset";
+        }
+/* 모달창 팝업시 뒷배경 스크롤 막기
+    https://velog.io/@kbing14/React-%EB%AA%A8%EB%8B%AC%EC%B0%BD-%ED%8C%9D%EC%97%85%EC%8B%9C-%EB%92%B7%EB%B0%B0%EA%B2%BD-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%A7%89%EA%B8%B0
+*/
+    }
   return <div>
     <Layout>
       <Wrapper>
@@ -110,7 +134,8 @@ function Profile() {
                 <Link to = {"/ProfileChange"}>
                  <button  style={{fontSize: "15px"}}> 프로필 편집 </button>
                 </Link>
-              <span> ⚙︎ </span>
+              <span onClick={() => {handleEditPopUp(true)}}> ⚙︎ </span>
+              {editPopUp && <PopUp onClose={handleEditPopUp} />}
             <FollowContainer>
               <span> 게시물5 </span>
               <span> 팔로워100 </span>
@@ -128,7 +153,7 @@ function Profile() {
             </PostBox>
         </Container> 
        </Wrapper>
-       <Footer/>
+       {/* <Footer/> */}
     </Layout>
       
    
