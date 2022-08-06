@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import Story from "../components/Story";
@@ -12,15 +12,15 @@ const Wrapper = styled.div`
 `;
 
 const Idbox = styled.div`
-text-align: center;
-margin-top: 10px;
-width: 20%;
-height: 5%;
-border: 1px solid lightgray;
-background-color: white;
-line-height: 300%;
-border-radius: 4px;
-font-weight : bold;
+  text-align: center;
+  margin-top: 10px;
+  width: 20%;
+  height: 5%;
+  border: 1px solid lightgray;
+  background-color: white;
+  line-height: 300%;
+  border-radius: 4px;
+  font-weight: bold;
 `;
 
 const Leftmessagebox = styled.div`
@@ -74,48 +74,46 @@ const Rightmessagebox = styled.div`
   float: left;
 `;
 
-
 function Direct() {
-  return <div>
-<Layout>
-  <Wrapper>
-  <Idbox> <span> @utae1102 </span>
-  </Idbox>
-  <Leftmessagebox>
-      <div>
-        <StoryCircle />
-        <StoryName>친구1</StoryName>
-      </div>
+  return (
+    <div>
+      <Layout>
+        <Wrapper>
+          <Idbox>
+            <span> @utae1102 </span>
+          </Idbox>
+          <Leftmessagebox>
+            <div>
+              <StoryCircle />
+              <StoryName>친구1</StoryName>
+            </div>
 
-      <div>
-        <StoryCircle />
-        <StoryName>친구2</StoryName>
-        </div>
+            <div>
+              <StoryCircle />
+              <StoryName>친구2</StoryName>
+            </div>
 
-      <div>
-        <StoryCircle />
-        <StoryName>친구3</StoryName>
-      </div>
-      
-      <div>
-        <StoryCircle />
-        <StoryName>친구4</StoryName>
-      </div>
+            <div>
+              <StoryCircle />
+              <StoryName>친구3</StoryName>
+            </div>
 
-      <div>
-        <StoryCircle />
-        <StoryName>친구5</StoryName>
-      </div>
+            <div>
+              <StoryCircle />
+              <StoryName>친구4</StoryName>
+            </div>
 
-  </Leftmessagebox>
-  <Rightmessagebox>
-  </Rightmessagebox>
-  </Wrapper>
-  <Story />
-  </Layout>
-</div>;
+            <div>
+              <StoryCircle />
+              <StoryName>친구5</StoryName>
+            </div>
+          </Leftmessagebox>
+          <Rightmessagebox></Rightmessagebox>
+        </Wrapper>
+        <Story />
+      </Layout>
+    </div>
+  );
 }
 
-
 export default Direct;
-
