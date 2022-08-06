@@ -92,12 +92,6 @@ const FollowContainer = styled.div`
   word-spacing: 10px;
 `;
 
-// pop up
-const PopUpStatus = {
-  TRUE: true,
-  FALSE: false,
-};
-
 function Profile() {
   // pop up
   const [editPopUp, setEditPopUp] = useState(false);
@@ -117,6 +111,7 @@ function Profile() {
   };
   return (
     <div>
+      {editPopUp && <PopUp onClose={handleEditPopUp} />}
       <Layout>
         <Wrapper>
           <Container>
@@ -134,7 +129,7 @@ function Profile() {
                 >
                   ⚙︎
                 </span>
-                {editPopUp && <PopUp onClose={handleEditPopUp} />}
+
                 <FollowContainer>
                   <span> 게시물5 </span>
                   <span> 팔로워100 </span>
