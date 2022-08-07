@@ -82,11 +82,20 @@ function ProfileChange() {
             <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 비밀번호 변경 </p>
             </Link>
-            <Link to = {"/Profile"} style={{ textDecoration: 'none', color: 'black' }}>
+            <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 웹 및 앱사이트 </p>
             </Link>
             <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 이메일 알림 </p>
+            </Link>
+            <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
+            <p> 푸시 알림 </p>
+            </Link>
+            <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
+            <p> 연락처 관리</p>
+            </Link>
+            <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
+            <p> 도움말 </p>
             </Link>
           </Option>
             <UserChange>
@@ -170,13 +179,13 @@ function ProfileChange() {
                         <UserChangeSubBox style={{height: "54px"}}>
                             <ChangeClass style={{paddingLeft:"2px"}}><label style={{position: "absolute", top: "-15px", right: "25px"}}>비슷한 계정 추천</label></ChangeClass>
                             <div style={{display:"flex", flexGrow:"1"}}>
-                                <div>ㅁ</div>
-                                <div style={{width:"190px",fontSize:"14px",fontWeight:"600",lineHeight:"120%"}}>팔로우할 만한 비슷한 계정을 추천할 때 회원님의 계정을 포함합니다.[?]</div>
+                             <input style={{margin: "8px"}} type='checkbox'></input>
+                                <div style={{width:"170px",fontSize:"14px",fontWeight:"600",lineHeight:"120%"}}>팔로우할 만한 비슷한 계정을 추천할 때 회원님의 계정을 포함합니다.[?]</div>
                             </div>
                         </UserChangeSubBox>
                         <UserChangeSubBox style={{height: "40px"}}>
                             <ChangeClass></ChangeClass>
-                            <button>제출</button>
+                            <button style={{width: "45px", height: "28px", borderRadius: "4px", borderWidth: "0.5px", cursor: "pointer"}}>제출</button>
                         </UserChangeSubBox>
                     </UserChangeBox>
                 </UserChangeContainer>
@@ -282,22 +291,20 @@ const ChangeInputBox = styled.div`
 `
 
 const ChangeInput = styled.input`
-    width: 280px;
-    height: 28px;
+    width: 340px;
+    height: 30px;
     padding: 0 10px;
-    
+    border-width: 0.5px;
     position: absolute;
     top: -3px;
+    border-radius : 4px;
     
 `
 
 const ChangeDesc = styled.div`
-    width: 280px;
+    width: 360px;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.4);
     
     //border: 1px solid #000;
 `
-/* 줄간격 조절하기
-https://tagilog.tistory.com/191
-*/

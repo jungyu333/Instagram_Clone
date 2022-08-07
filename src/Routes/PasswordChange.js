@@ -86,11 +86,20 @@ function PasswordChange() {
               <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 비밀번호 변경 </p>
               </Link>
-              <Link to = {"/Profile"} style={{ textDecoration: 'none', color: 'black' }}>
+              <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 웹 및 앱사이트 </p>
               </Link>
               <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
               <p> 이메일 알림 </p>
+              </Link>
+              <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
+              <p> 푸시 알림 </p>
+              </Link>
+              <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
+              <p> 연락처 관리</p>
+              </Link>
+              <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
+              <p> 도움말 </p>
               </Link>
             </Option>
             <UserChange>
@@ -129,7 +138,7 @@ function PasswordChange() {
                  <ChangeDesc style={{height:"35px"}}></ChangeDesc> 
                 <UserChangeSubBox style={{height: "40px"}}>
                     <ChangeClass></ChangeClass>
-                     <button style={{height: "32px", borderRadius: "4px", borderWidth: "0.5px"}}>비밀번호 변경</button>
+                     <button style={{height: "32px", borderRadius: "4px", borderWidth: "0.5px", cursor: "pointer"}}>비밀번호 변경</button>
                 </UserChangeSubBox>
                   <ChangeDesc style={{height:"15px"}}></ChangeDesc> 
                 <UserChangeSubBox style={{height: "40px"}}>

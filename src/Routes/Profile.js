@@ -105,9 +105,7 @@ function Profile() {
       setEditPopUp(false);
       document.body.style.overflow = "unset";
     }
-    /* 모달창 팝업시 뒷배경 스크롤 막기
-    https://velog.io/@kbing14/React-%EB%AA%A8%EB%8B%AC%EC%B0%BD-%ED%8C%9D%EC%97%85%EC%8B%9C-%EB%92%B7%EB%B0%B0%EA%B2%BD-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%A7%89%EA%B8%B0
-*/
+   
   };
   return (
     <div>
@@ -117,12 +115,12 @@ function Profile() {
           <Container>
             <ProfileBox>
               <ProfileImg />
-              <ProfileName>
+              <ProfileName> 
                 <span> utae1102 </span>
                 <Link to={"/ProfileChange"}>
-                  <button style={{ fontSize: "15px" }}> 프로필 편집 </button>
+                  <button style={{ fontSize: "15px", cursor: "pointer", height: "27px", verticalAlign: "6px"}}> 프로필 편집 </button>
                 </Link>
-                <span
+                <span style={{fontSize: "35px", cursor: "pointer", marginLeft: "15px"}}
                   onClick={() => {
                     handleEditPopUp(true);
                   }}

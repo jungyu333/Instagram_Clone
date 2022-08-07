@@ -69,11 +69,20 @@ function EmailSettings() {
                 <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
                 <p> 비밀번호 변경 </p>
                 </Link>
-                <Link to = {"/Profile"} style={{ textDecoration: 'none', color: 'black' }}>
+                <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
                 <p> 웹 및 앱사이트 </p>
                 </Link>
                 <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
                 <p> 이메일 알림 </p>
+                </Link>
+                <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 푸시 알림 </p>
+                </Link>
+                <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 연락처 관리 </p>
+                </Link>
+                <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 도움말 </p>
                 </Link>
             </Option>
             <UserChange>
