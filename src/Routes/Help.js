@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 function Help() {
     return <div>
@@ -46,6 +47,7 @@ function Help() {
               </HelpContainer>
             </UserChange>
           </ProfileChangeContainer>
+          <Footer/>
         </Wrapper>
       </Layout>
     </div>
@@ -58,7 +60,7 @@ function Help() {
 const Wrapper = styled.div`
   background-color: #fafafa;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   padding: 10vh 0;
   margin: 0 auto;
 `;

@@ -47,7 +47,7 @@ function EmailSettingsContainer() {
       isOn: "on",
     },
   ];
-  // 서버로부터 받아와야할 정보
+
 
   return (
     <EmailSettingsWrapper>
@@ -64,8 +64,3 @@ function EmailSettingsContainer() {
 
 export default EmailSettingsContainer;
 
-/*
-    부모와의 마진 병합을 방지하기 위해 absoulte
-*/
-
-//const

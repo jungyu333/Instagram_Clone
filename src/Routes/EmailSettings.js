@@ -1,14 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer.js"
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import EmailSettingsContainer from '../components/EmailSettingsContainer';
 
-const Wrapper = styled.div`
+function EmailSettings() {
+    return <div>
+      <Layout>
+        <Wrapper>
+          <ProfileChangeContainer>
+            <Option>
+                <Link to = {"/ProfileChange"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 프로필 편집 </p>
+                </Link>
+                <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 비밀번호 변경 </p>
+                </Link>
+                <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 웹 및 앱사이트 </p>
+                </Link>
+                <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 이메일 알림 </p>
+                </Link>
+                <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 푸시 알림 </p>
+                </Link>
+                <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 연락처 관리 </p>
+                </Link>
+                <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
+                <p> 도움말 </p>
+                </Link>
+            </Option>
+            <UserChange>
+                <EmailSettingsContainer></EmailSettingsContainer>
+            </UserChange>
+          </ProfileChangeContainer>
+          <Footer/>
+        </Wrapper>
+      </Layout>
+    </div>
+  };
+
+  const Wrapper = styled.div`
   background-color: #fafafa;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   padding: 10vh 0;
   margin: 0 auto;
 `;
@@ -54,46 +92,6 @@ const UserChange= styled.div`
   height: 800px;
   line-height: 310%;
 `;
-
-
-
-function EmailSettings() {
-    return <div>
-      <Layout>
-        <Wrapper>
-          <ProfileChangeContainer>
-            <Option>
-                <Link to = {"/ProfileChange"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 프로필 편집 </p>
-                </Link>
-                <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 비밀번호 변경 </p>
-                </Link>
-                <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 웹 및 앱사이트 </p>
-                </Link>
-                <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 이메일 알림 </p>
-                </Link>
-                <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 푸시 알림 </p>
-                </Link>
-                <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 연락처 관리 </p>
-                </Link>
-                <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
-                <p> 도움말 </p>
-                </Link>
-            </Option>
-            <UserChange>
-                <EmailSettingsContainer></EmailSettingsContainer>
-            </UserChange>
-          </ProfileChangeContainer>
-          <Footer/>
-        </Wrapper>
-      </Layout>
-    </div>
-  };
 
 
   

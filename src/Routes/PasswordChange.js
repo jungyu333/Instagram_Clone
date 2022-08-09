@@ -2,12 +2,12 @@ import React ,{useState} from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer.js"
+import Footer from "../components/Footer";
 
 const Wrapper = styled.div`
   background-color: #fafafa;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   padding: 10vh 0;
   margin: 0 auto;
 `;
@@ -53,24 +53,17 @@ const UserChange= styled.div`
 
 
 function PasswordChange() {
-  const [userName, setUserName] = useState("박찬규");
-  const [userId, setUserId] = useState("chankyu012");  
   const [userPastPassword, setUserPastPassword] = useState("");
   const [userNewPassWord, setUserNewPassWord] = useState("");
   const [userNewPassWordConfirm, setUserNewPassWordConfirm] = useState("");
   
-    const handleNameChange = (e) => {
-      setUserName(e.target.value);
-    };
     const handleNewPassWordChange = (e) => {
       setUserNewPassWord(e.target.value);
     };
     const handleNewPassWordConfirmChange = (e) => {
       setUserNewPassWordConfirm(e.target.value);
     };
-    const handleIdChange = (e) => {
-      setUserId(e.target.value);
-    };
+    
     const handlePastPasswordChange = (e) => {
         setUserPastPassword(e.target.value);
     };
@@ -107,7 +100,7 @@ function PasswordChange() {
             <UserProfileBox>
                         <div><UserImg /></div>
                         <div style={{flexGrow: "1", lineHeight: "25px"}}>
-                        <h2 style={{height: "22px", marginTop: "5px", fontSize: "25px"}}>{userId}</h2>
+                        <h2 style={{height: "22px", marginTop: "5px", fontSize: "25px"}}>Chankyu012</h2>
                         </div>
             </UserProfileBox>
              <ChangeDesc style={{height:"15px"}}></ChangeDesc>  

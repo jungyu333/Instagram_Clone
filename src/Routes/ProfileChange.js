@@ -4,42 +4,6 @@ import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 
-const Wrapper = styled.div`
-  background-color: #fafafa;
-  width: 100%;
-  height: 100vh;
-  padding: 10vh 0;
-  margin: 0 auto;
-`;
-
-const ProfileChangeContainer = styled.div`
-  margin: auto;
-  margin-top: 50px;
-  width: 65%;
-  position: relative;
-  display: flex;
-  border: 1px solid lightgray;
-  height: 805px;
-  background-color: #ffffff;
-  line-height: 300%;
-  border-radius: 4px;
-`;
-
-const Option= styled.div`
-  padding: 3.5px 0px 2px 30px;
-  margin: -1px;
-  font-size: 16.5px;
-  width: 25%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  height: 800px;
-  line-height: 310%;
-`;
-
-
-
 function ProfileChange() {
     const [userName, setUserName] = useState("박찬규");
     const [userId, setUserId] = useState("chankyu012");
@@ -198,6 +162,41 @@ function ProfileChange() {
   }
 
 export default ProfileChange;
+
+const Wrapper = styled.div`
+  background-color: #fafafa;
+  width: 100%;
+  height: 120vh;
+  padding: 10vh 0;
+  margin: 0 auto;
+`;
+
+const ProfileChangeContainer = styled.div`
+  margin: auto;
+  margin-top: 50px;
+  width: 65%;
+  position: relative;
+  display: flex;
+  border: 1px solid lightgray;
+  height: 805px;
+  background-color: #ffffff;
+  line-height: 300%;
+  border-radius: 4px;
+`;
+
+const Option= styled.div`
+  padding: 3.5px 0px 2px 30px;
+  margin: -1px;
+  font-size: 16.5px;
+  width: 25%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 800px;
+  line-height: 310%;
+`;
+
 
 const UserChange= styled.div`
   padding: 5px 20px 0px 20px;
