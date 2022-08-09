@@ -1,8 +1,3 @@
-/*
-    팝업창이 열린다
-    "취소" 버튼이나 팝업창 바깥을 클릭하면 팝업창이 닫힌다
-*/
-
 import React from "react";
 import styled from "styled-components";
 import PopUpButton from "./PopUpButton";
@@ -54,9 +49,6 @@ function PopUp(handleEditPopUp) {
         <PopUpContents>
           <PopUpButtonBox>
             <PopUpButton link="#" text="비밀번호 변경" />
-            {/* 이벤트 버블링 막기
-                            https://xively.tistory.com/66
-                         */}
             <PopUpButton link="#" text="QR코드" />
             <PopUpButton link="#" text="앱 및 웹사이트" />
             <PopUpButton link="#" text="알림" />
@@ -74,11 +66,3 @@ function PopUp(handleEditPopUp) {
 }
 
 export default PopUp;
-/*
-export default
-https://lily-im.tistory.com/21
-*/
-
-/* 간단한 팝업 만들기
-https://2hh2.tistory.com/31
-*/

@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-/*
-    원하는 링크로 이동할 수 있도록 link를 받는다
-
-    
-*/
-
 const PopUpButtonContainer = styled.button`
   width: 400px;
   height: 48px;
