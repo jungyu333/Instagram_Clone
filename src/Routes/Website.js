@@ -4,45 +4,64 @@ import Layout from "../components/Layout";
 import { Link } from "react-router-dom";
 
 function Website() {
-    return <div>
+  return (
+    <div>
       <Layout>
         <Wrapper>
           <ProfileChangeContainer>
             <Option>
-                <Link to = {"/ProfileChange"} style={{ textDecoration: 'none', color: 'black' }}>
+              <Link
+                to={"/ProfileChange"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 프로필 편집 </p>
-                </Link>
-                <Link to = {"/PasswordChange"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/PasswordChange"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 비밀번호 변경 </p>
-                </Link>
-                <Link to = {"/Website"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/Website"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 웹 및 앱사이트 </p>
-                </Link>
-                <Link to = {"/EmailSettings"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/EmailSettings"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 이메일 알림 </p>
-                </Link>
-                <Link to = {"/PushNotice"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/PushNotice"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 푸시 알림 </p>
-                </Link>
-                <Link to = {"/ContactManagement"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/ContactManagement"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 연락처 관리 </p>
-                </Link>
-                <Link to = {"/Help"} style={{ textDecoration: 'none', color: 'black' }}>
+              </Link>
+              <Link
+                to={"/Help"}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <p> 도움말 </p>
-                </Link>
+              </Link>
             </Option>
-            <UserChange>
-                
-            </UserChange>
+            <UserChange></UserChange>
           </ProfileChangeContainer>
         </Wrapper>
       </Layout>
     </div>
-  };
+  );
+}
 
-
-  
-  export default Website;
+export default Website;
 
 const Wrapper = styled.div`
   background-color: #fafafa;
@@ -65,7 +84,7 @@ const ProfileChangeContainer = styled.div`
   border-radius: 4px;
 `;
 
-const Option= styled.div`
+const Option = styled.div`
   padding: 3.5px 0px 2px 30px;
   margin: -1px;
   font-size: 16.5px;
@@ -78,7 +97,7 @@ const Option= styled.div`
   line-height: 310%;
 `;
 
-const UserChange= styled.div`
+const UserChange = styled.div`
   padding: 0px 20px 0px 20px;
   margin: -1px;
   font-size: 16.5px;
@@ -93,4 +112,3 @@ const UserChange= styled.div`
   height: 800px;
   line-height: 310%;
 `;
-  
