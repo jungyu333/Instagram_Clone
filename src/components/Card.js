@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const CardWrapper = styled.div`
-  width: 55%;
+  width: 60%;
   margin: 30px auto;
 `;
 
 const CardContainer = styled.div`
-  width: 50%;
+  width: 53%;
   height: 65vh;
   border: 1px solid lightgray;
   padding: 20px 0;
