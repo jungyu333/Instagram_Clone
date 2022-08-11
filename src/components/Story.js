@@ -30,6 +30,8 @@ const StoryCircle = styled.div`
   height: 60px;
   border-radius: 50%;
   line-height: center;
+  cursor:pointer;
+
 `;
 
 const StoryName = styled.div`
@@ -40,6 +42,8 @@ const StoryName = styled.div`
   height: 10px;
   font-size: 12px;
   white-space: nowrap;
+  cursor:pointer;
+
 `;
 
 const NextButton = styled.div`
@@ -53,6 +57,8 @@ const NextButton = styled.div`
   line-height: 25px;
   font-size: 25px;
   border: 1px solid lightgray;
+  cursor:pointer;
+
 `;
 
 function Story() {

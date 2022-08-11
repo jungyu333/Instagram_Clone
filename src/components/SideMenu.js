@@ -13,7 +13,7 @@ const SideWrapper = styled.div`
 
 const ProfileWrapper = styled.div`
   width: 100%;
-  padding: 10px;
+  padding: 10 0 10 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +34,7 @@ const ProfileImage = styled.div`
   height: 60px;
   border-radius: 50%;
   line-height: center;
+  cursor: pointer;
 `;
 
 const ProfileName = styled.div`
@@ -192,7 +193,7 @@ function SideMenu() {
               <RecommendProfileImage />
               <RecommendProfileName>
                 <Link to={"/profile"} style={{ textDecoration: "none" }}>
-                  <span>friend1</span>
+                  <span>friend2</span>
 
                   <br />
                   <span>andasdf님이 팔로우합니다.</span>
@@ -208,7 +209,7 @@ function SideMenu() {
               <RecommendProfileImage />
               <RecommendProfileName>
                 <Link to={"/profile"} style={{ textDecoration: "none" }}>
-                  <span>friend1</span>
+                  <span>friend3</span>
 
                   <br />
                   <span>andasdf님이 팔로우합니다.</span>
@@ -224,7 +225,7 @@ function SideMenu() {
               <RecommendProfileImage />
               <RecommendProfileName>
                 <Link to={"/profile"} style={{ textDecoration: "none" }}>
-                  <span>friend1</span>
+                  <span>friend4</span>
 
                   <br />
                   <span>andasdf님이 팔로우합니다.</span>
@@ -240,7 +241,7 @@ function SideMenu() {
               <RecommendProfileImage />
               <RecommendProfileName>
                 <Link to={"/profile"} style={{ textDecoration: "none" }}>
-                  <span>friend1</span>
+                  <span>friend5</span>
 
                   <br />
                   <span>andasdf님이 팔로우합니다.</span>

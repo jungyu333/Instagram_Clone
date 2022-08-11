@@ -7,7 +7,7 @@ const CardWrapper = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 53%;
+  width: 54%;
   height: 65vh;
   border: 1px solid lightgray;
   padding: 20px 0;
@@ -38,6 +38,8 @@ const HeadInfo = styled.div`
     font-weight: 700;
     font-size: 14px;
   }
+  cursor:pointer;
+
 `;
 
 const Icon = styled.div`
@@ -46,6 +48,8 @@ const Icon = styled.div`
     display: flex;
     overflow: visible;
   }
+  cursor:pointer;
+
 `;
 
 const ImageContainer = styled.div`
@@ -71,6 +75,7 @@ const MainIconWrapper = styled.div`
 const MainIconContainer = styled.div`
   display: flex;
   align-items: center;
+  cursor:pointer;
 `;
 
 const MainIcon = styled.div`
@@ -80,6 +85,8 @@ const MainIcon = styled.div`
 
 const InputIcon = styled.div`
   width: 30px;
+  cursor:pointer;
+
 `;
 
 const InputContainer = styled.div`
@@ -157,7 +164,7 @@ function Card() {
             </svg>
           </InputIcon>
           <input placeholder="댓글 달기..." />
-          <button>게시</button>
+          <button style={{cursor:"pointer"}}>게시</button>
         </InputContainer>
       </CardContainer>
     </CardWrapper>
