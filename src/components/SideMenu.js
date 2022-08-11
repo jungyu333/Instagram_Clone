@@ -14,7 +14,7 @@ const SideWrapper = styled.div`
 
 const ProfileWrapper = styled.div`
   width: 100%;
-  padding: 10px;
+  padding:10 0 10 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,8 @@ const ProfileImage = styled.div`
   height: 60px;
   border-radius: 50%;
   line-height: center;
+  cursor:pointer;
+
 `;
 
 const ProfileName = styled.div`
@@ -155,10 +157,10 @@ const FooterMenu = styled.div`
 const FooterInfo = styled.div``;
 
 function SideMenu() {
- 
-   const handleFollow=(event)=>{
-    (event.currentTarget.innerText==="팔로우")?event.currentTarget.style.color = 'black':event.currentTarget.style.color = 'blue';
-    (event.currentTarget.innerText==="팔로잉")?event.currentTarget.innerText="팔로우":event.currentTarget.innerText="팔로잉";
+
+  const handleFollow = (event) => {
+    (event.currentTarget.innerText === "팔로우") ? event.currentTarget.style.color = 'black' : event.currentTarget.style.color = 'blue';
+    (event.currentTarget.innerText === "팔로잉") ? event.currentTarget.innerText = "팔로우" : event.currentTarget.innerText = "팔로잉";
 
 
   }
@@ -168,35 +170,35 @@ function SideMenu() {
         <Myprofile>
           <ProfileImage></ProfileImage>
           <ProfileName>
-            <Link to={"/profile"}  style={{textDecoration:"none"}}>
-            <span style={{cursor: "pointer"}}>my ID</span>
-            <br />
-            <span>강대훈</span>
+            <Link to={"/profile"} style={{ textDecoration: "none" }}>
+              <span style={{ cursor: "pointer" }}>my ID</span>
+              <br />
+              <span>강대훈</span>
             </Link>
 
           </ProfileName>
         </Myprofile>
-        <span style={{cursor: "pointer"}}>전환</span>
+        <span style={{ cursor: "pointer" }}>전환</span>
       </ProfileWrapper>
       <RecommendWrapper>
         <RecommendHeader>
           <span>회원님을 위한 추천</span>
-          <span style={{cursor: "pointer"}}>모두 보기</span>
+          <span style={{ cursor: "pointer" }}>모두 보기</span>
         </RecommendHeader>
         <div>
           <RecommendProfileWrapper>
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -204,15 +206,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend2</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span onClick = {handleFollow} >팔로우</span>
+            <span onClick={handleFollow} >팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -220,15 +222,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend3</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -236,15 +238,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend4</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -252,15 +254,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend5</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
       </RecommendWrapper>
@@ -282,7 +284,7 @@ function SideMenu() {
           <a href="https://help.instagram.com/581066165581870">약관</a>
           <span> ˙ </span>
           <a href="https://www.instagram.com/explore/locations/">위치</a>
-         <span> ˙ </span>
+          <span> ˙ </span>
           <div>언어</div>
         </FooterMenu>
         <FooterInfo>
