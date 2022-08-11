@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
 const SideWrapper = styled.div`
   width: 30%;
   float: right;
@@ -27,7 +26,6 @@ const Myprofile = styled.div`
   display: flex;
   padding: 5px;
   align-items: center;
-  
 `;
 
 const ProfileImage = styled.div`
@@ -47,16 +45,13 @@ const ProfileName = styled.div`
 
     &:last-child {
       color: gray;
-      cursor:text;
-
+      cursor: text;
     }
   }
 `;
 
 const RecommendWrapper = styled.div`
   width: 100%;
-
- 
 `;
 
 const RecommendHeader = styled.div`
@@ -87,12 +82,13 @@ const RecommendProfileWrapper = styled(ProfileWrapper)`
   span {
     color: blue;
     padding-right: 40px;
-    cursor:pointer;
+    cursor: pointer;
   }
 `;
 
 const RecommendProfile = styled(Myprofile)`
-cursor:text`;
+  cursor: text;
+`;
 
 const RecommendProfileImage = styled(ProfileImage)`
   width: 40px;
@@ -102,46 +98,37 @@ const RecommendProfileImage = styled(ProfileImage)`
 
 const RecommendProfileName = styled(ProfileName)`
   height: 30px;
-  
-  Link{
-    text-decoration:none;
+
+  Link {
+    text-decoration: none;
   }
   span {
-   
     &:first-child {
       color: black;
       font-size: 1rem;
       cursor: pointer;
     }
-    
 
     &:last-child {
       color: gray;
       font-size: 0.8rem;
-      cursor:text;
+      cursor: text;
     }
-  
   }
 `;
 
 const Footer = styled.div`
   font-size: 0.9rem;
   color: gray;
-  
-  a{
-    text-decoration:none;
-    color:gray;
-    &:hover{
-        text-decoration:underline;
 
-
+  a {
+    text-decoration: none;
+    color: gray;
+    &:hover {
+      text-decoration: underline;
     }
   }
-
 `;
-
-
-
 
 const FooterMenu = styled.div`
   div {
@@ -155,48 +142,48 @@ const FooterMenu = styled.div`
 const FooterInfo = styled.div``;
 
 function SideMenu() {
- 
-   const handleFollow=(event)=>{
-    (event.currentTarget.innerText==="팔로우")?event.currentTarget.style.color = 'black':event.currentTarget.style.color = 'blue';
-    (event.currentTarget.innerText==="팔로잉")?event.currentTarget.innerText="팔로우":event.currentTarget.innerText="팔로잉";
-
-
-  }
+  const handleFollow = (event) => {
+    event.currentTarget.innerText === "팔로우"
+      ? (event.currentTarget.style.color = "black")
+      : (event.currentTarget.style.color = "blue");
+    event.currentTarget.innerText === "팔로잉"
+      ? (event.currentTarget.innerText = "팔로우")
+      : (event.currentTarget.innerText = "팔로잉");
+  };
   return (
     <SideWrapper>
       <ProfileWrapper>
         <Myprofile>
           <ProfileImage></ProfileImage>
           <ProfileName>
-            <Link to={"/profile"}  style={{textDecoration:"none"}}>
-            <span style={{cursor: "pointer"}}>my ID</span>
-            <br />
-            <span>강대훈</span>
+            <Link to={"/profile"} style={{ textDecoration: "none" }}>
+              <span style={{ cursor: "pointer" }}>my ID</span>
+              <br />
+              <span>강대훈</span>
             </Link>
-
           </ProfileName>
         </Myprofile>
-        <span style={{cursor: "pointer"}}>전환</span>
+        <span style={{ cursor: "pointer" }}>전환</span>
       </ProfileWrapper>
       <RecommendWrapper>
         <RecommendHeader>
           <span>회원님을 위한 추천</span>
-          <span style={{cursor: "pointer"}}>모두 보기</span>
+          <span style={{ cursor: "pointer" }}>모두 보기</span>
         </RecommendHeader>
         <div>
           <RecommendProfileWrapper>
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -204,15 +191,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span onClick = {handleFollow} >팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -220,15 +207,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -236,15 +223,15 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
         <div>
@@ -252,22 +239,24 @@ function SideMenu() {
             <RecommendProfile>
               <RecommendProfileImage />
               <RecommendProfileName>
-              <Link to={"/profile"}  style={{textDecoration:"none"}}>
-                <span>friend1</span>
-              
-                <br />
-                <span>andasdf님이 팔로우합니다.</span>
+                <Link to={"/profile"} style={{ textDecoration: "none" }}>
+                  <span>friend1</span>
+
+                  <br />
+                  <span>andasdf님이 팔로우합니다.</span>
                 </Link>
               </RecommendProfileName>
             </RecommendProfile>
-            <span  onClick = {handleFollow}>팔로우</span>
+            <span onClick={handleFollow}>팔로우</span>
           </RecommendProfileWrapper>
         </div>
       </RecommendWrapper>
 
       <Footer>
         <FooterMenu>
-          <div><a href="https://about.instagram.com/">소개</a></div>
+          <div>
+            <a href="https://about.instagram.com/">소개</a>
+          </div>
           <span> ˙ </span>
           <a href="https://help.instagram.com/">도움말</a>
           <span> ˙ </span>
@@ -277,12 +266,14 @@ function SideMenu() {
           <span> ˙ </span>
           <a href="https://about.instagram.com/about-us/careers">채용정보</a>
           <span> ˙ </span> <br />
-          <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">개인정보처리방침</a>
+          <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">
+            개인정보처리방침
+          </a>
           <span> ˙ </span>
           <a href="https://help.instagram.com/581066165581870">약관</a>
           <span> ˙ </span>
           <a href="https://www.instagram.com/explore/locations/">위치</a>
-         <span> ˙ </span>
+          <span> ˙ </span>
           <div>언어</div>
         </FooterMenu>
         <FooterInfo>

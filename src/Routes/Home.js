@@ -8,23 +8,21 @@ import Story from "../components/Story";
 const Wrapper = styled.div`
   background-color: #fafafa;
   width: 100%;
-  height: 100vh;
+  height: min-content;
   padding: 10vh 0;
   margin: 0 auto;
 `;
 
-
 function Home() {
   return (
     <Layout>
-        <Wrapper>
-          <Story />
-          <SideMenu />
-          {[1, 2, 3, 4, 5, 6].map((card) => (
-            <Card key={card} />
-          ))}
-          
-        </Wrapper>
+      <Wrapper>
+        <Story />
+        <SideMenu />
+        {[1, 2, 3, 4].map((card) => (
+          <Card key={card} />
+        ))}
+      </Wrapper>
     </Layout>
   );
 }
